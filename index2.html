@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=devicewidth,initial-scale=1">
+        <title>
+            Banana-Papaya Experiment
+        </title>
+
+        <link rel = "stylesheet" href = "CSS/stylemain.css">
+    </head>
+    <body>
+        <div id = "wholeCard">
+
+            <div id = "header">
+                <h1 id = "heading">THE BANANA-PAPAYA EXPERIMENT</h1>
+            </div>
+
+            <div id = "calculationArea">
+                <form action="#" id = "takeInputs">
+                <div class = "inputFields" id = "bananas">
+
+                        <div class = "eachInput" id = "banana1">
+                            <label for = "b1">B1 <span class = "units"> (Bananas) </span> </label> <br>
+                            <input type = "text" class = "inputs" id = "b1" name = "b1" placeholder = "bananas" onchange = "inputChange()">
+                        </div>
+
+                        <img src = "images/banana.png">
+
+                        <div class = "eachInput" id = "banana2">
+                            <label for = "b2">B2 <span class = "units"> (Bananas) </span> </label> <br>
+                            <input type = "text" class = "inputs" id = "b2" name = "b2" placeholder = "bananas" onchange = "inputChange()">
+                        </div>
+
+                    </div>
+
+                    
+                <div class = "inputFields" id = "papayas">
+
+                    <div class = "eachInput" id = "papaya1">
+                        <label for = "p1">P1 <span class = "units"> (Papayas) </span> </label> <br>
+                        <input type = "text" class = "inputs" id = "p1" name = "p1" placeholder = "papayas" onchange = "inputChange()">
+                    </div>
+
+                    <img src = "images/papaya.png">
+
+                    <div class = "eachInput" id = "papaya2">
+                        <label for = "p2">P2 <span class = "units"> (Papayas) </span> </label> <br>
+                        <input type = "text" class = "inputs" id = "p2" name = "p2" placeholder = "papayas" onchange = "inputChange()">
+                    </div>
+
+                </div>
+
+                <div class = "inputFields" id = "temperatures">
+
+                    <div class = "eachInput" id = "temp1">
+                        <label for = "t1">T1 <span class = "units" id = "tUnit1"> (Kelvins(K)) </span> </label> <br>
+                        <input type = "text" class = "inputs" id = "t1" name = "t1" placeholder = "kelvins" onchange = "inputChange()">
+                    </div>
+
+                    <img src = "images/temp.png">
+
+                    <div class = "eachInput" id = "temp2">
+                        <label for = "t2">T2 <span class = "units" id = "tUnit2"> (Kelvins(K)) </span> </label> <br>
+                        <input type = "text" class = "inputs" id = "t2" name = "t2" placeholder = "kelvins" onchange = "inputChange()">
+                    </div>
+
+                </div>
+
+                <div class = "inputFields" id = "unitChanges">
+                    <div id = "tempButtons">
+                    <div class = "buttons">
+                        <button class = "selected" id = "Kelvin" onclick = "changeCurrent()" > Kelvin </button>
+                    </div>
+                    <div class = "buttons">
+                        <button class = "normal" id = "Celsius" onclick = "changeCurrent()"> Celsius </button>
+                    </div>
+
+                    <div class = "buttons">
+                        <button class = "normal" id = "Fahrenheit" onclick = "changeCurrent()"> Fahrenheit </button>
+                    </div>
+                </div>
+
+                    <div class = "buttons" id = "clearButton">
+                        <input type ="button" id = "clear" onclick = "clearAll()" value="Clear All"></inputbutton>
+                    </div>
+
+                </div>
+
+            </form>
+            </div>
+        </div>
+    </body>
+    <script src = "JS/mainScript.js"></script>
+</html>
